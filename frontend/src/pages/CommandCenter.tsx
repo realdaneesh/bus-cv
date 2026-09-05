@@ -12,7 +12,7 @@ const CommandCenter: React.FC = () => {
   const [monitoring, setMonitoring] = useState<MonitoringStatus | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [lastRefreshed, setLastRefreshed] = useState<Date | null>(null);
+  const [, setLastRefreshed] = useState<Date | null>(null);
 
   const load = useCallback(async () => {
     try {
@@ -35,13 +35,6 @@ const CommandCenter: React.FC = () => {
     const interval = setInterval(load, 30000);
     return () => clearInterval(interval);
   }, [load]);
-
-  const trafficLevelColor: Record<string, string> = {
-    LOW: 'var(--emerald)',
-    MODERATE: 'var(--amber)',
-    HEAVY: '#c47a3c',
-    CONGESTED: 'var(--rose)',
-  };
 
   function dotVariant(s?: string): 'online' | 'offline' | 'warning' | 'error' {
     if (!s) return 'offline';
