@@ -3,38 +3,38 @@
 
 /* ==========================================
    BUS-CV Command Center Design System
-   Olive/Dark Green Template Style
+   Cosmic Purple / Gold Template Style
    ========================================== */
 
 :root {
-  /* Olive/Dark Green Color Palette */
-  --bg-base: #1a1f16;
-  --bg-surface: #222819;
-  --bg-elevated: #2a3220;
-  --bg-card: #2d3526;
-  --bg-card-hover: #343d2c;
+  /* Cosmic Purple / Gold Color Palette */
+  --bg-base: #0f0a1a;
+  --bg-surface: #1a1230;
+  --bg-elevated: #231842;
+  --bg-card: #2a1e4a;
+  --bg-card-hover: #332558;
 
-  --border-default: #3d4a32;
-  --border-accent: #4a5938;
+  --border-default: #3a2d5c;
+  --border-accent: #4a3a72;
 
-  --olive: #6b7c52;
-  --olive-light: #8a9e6a;
-  --olive-dark: #4a5938;
-  --olive-glow: rgba(107, 124, 82, 0.15);
+  --olive: #c9a227;
+  --olive-light: #e0b830;
+  --olive-dark: #8a6d1a;
+  --olive-glow: rgba(201, 162, 39, 0.15);
 
   --emerald: #7cb668;
-  --amber: #d4a843;
+  --amber: #e0b830;
   --rose: #c45c5c;
-  --blue: #5a8fb4;
-  --purple: #8b6fb0;
+  --blue: #7a8fd4;
+  --purple: #9b72cf;
 
-  --text-primary: #e8e6e1;
-  --text-secondary: #b8b5a8;
-  --text-muted: #7a7868;
-  --text-accent: #8a9e6a;
+  --text-primary: #f0ece4;
+  --text-secondary: #c4bdd4;
+  --text-muted: #7a6f90;
+  --text-accent: #e0b830;
 
   /* Gold accent for header area */
-  --gold-gradient: linear-gradient(135deg, #8b7355 0%, #a68b5b 50%, #c4a265 100%);
+  --gold-gradient: linear-gradient(135deg, #a68b2a 0%, #c9a227 50%, #e0b830 100%);
 }
 
 * {
@@ -336,16 +336,16 @@ body {
 }
 
 .badge-active { background: rgba(124, 182, 104, 0.15); color: #7cb668; border-color: rgba(124, 182, 104, 0.3); }
-.badge-resolved { background: rgba(122, 120, 104, 0.2); color: #b8b5a8; border-color: rgba(122, 120, 104, 0.4); }
-.badge-investigating { background: rgba(212, 168, 67, 0.15); color: #d4a843; border-color: rgba(212, 168, 67, 0.3); }
+.badge-resolved { background: rgba(122, 111, 144, 0.2); color: #c4bdd4; border-color: rgba(122, 111, 144, 0.4); }
+.badge-investigating { background: rgba(224, 184, 48, 0.15); color: #e0b830; border-color: rgba(224, 184, 48, 0.3); }
 
 .badge-high { background: rgba(196, 92, 92, 0.15); color: #c45c5c; border-color: rgba(196, 92, 92, 0.3); }
-.badge-medium { background: rgba(212, 168, 67, 0.15); color: #d4a843; border-color: rgba(212, 168, 67, 0.3); }
-.badge-low { background: rgba(122, 120, 104, 0.2); color: #b8b5a8; border-color: rgba(122, 120, 104, 0.4); }
+.badge-medium { background: rgba(224, 184, 48, 0.15); color: #e0b830; border-color: rgba(224, 184, 48, 0.3); }
+.badge-low { background: rgba(122, 111, 144, 0.2); color: #c4bdd4; border-color: rgba(122, 111, 144, 0.4); }
 .badge-critical { background: rgba(196, 92, 92, 0.2); color: #d46b6b; border-color: rgba(196, 92, 92, 0.5); }
 
-.badge-seed { background: rgba(139, 111, 176, 0.15); color: #8b6fb0; border-color: rgba(139, 111, 176, 0.3); }
-.badge-ai { background: rgba(107, 124, 82, 0.15); color: var(--olive-light); border-color: rgba(107, 124, 82, 0.3); }
+.badge-seed { background: rgba(155, 114, 207, 0.15); color: #9b72cf; border-color: rgba(155, 114, 207, 0.3); }
+.badge-ai { background: rgba(201, 162, 39, 0.15); color: var(--olive-light); border-color: rgba(201, 162, 39, 0.3); }
 
 .status-dot {
   width: 6px;
@@ -355,8 +355,8 @@ body {
 }
 
 .status-dot.online { background: #7cb668; box-shadow: 0 0 6px #7cb668; animation: pulse-emerald 2s infinite; }
-.status-dot.offline { background: #7a7868; }
-.status-dot.warning { background: #d4a843; box-shadow: 0 0 6px #d4a843; }
+.status-dot.offline { background: #7a6f90; }
+.status-dot.warning { background: #e0b830; box-shadow: 0 0 6px #e0b830; }
 .status-dot.error { background: #c45c5c; box-shadow: 0 0 6px #c45c5c; }
 
 @keyframes pulse-emerald {
@@ -399,9 +399,9 @@ body {
 }
 
 .alert-badge.new-results {
-  background: rgba(212, 168, 67, 0.15);
+  background: rgba(224, 184, 48, 0.15);
   color: var(--amber);
-  border: 1px solid rgba(212, 168, 67, 0.3);
+  border: 1px solid rgba(224, 184, 48, 0.3);
 }
 
 .alert-badge.today {
@@ -433,7 +433,7 @@ body {
 
 .data-table td {
   padding: 0.75rem 0.875rem;
-  border-bottom: 1px solid rgba(61, 74, 50, 0.5);
+  border-bottom: 1px solid rgba(58, 45, 92, 0.5);
   color: var(--text-secondary);
   vertical-align: middle;
 }
@@ -469,8 +469,8 @@ body {
   border-color: var(--olive);
 }
 .btn-primary:hover:not(:disabled) {
-  background: #9ab27a;
-  box-shadow: 0 0 12px rgba(138, 158, 106, 0.4);
+  background: #f0c840;
+  box-shadow: 0 0 12px rgba(224, 184, 48, 0.4);
 }
 
 .btn-danger {
@@ -577,7 +577,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(61, 74, 50, 0.5);
+  border-bottom: 1px solid rgba(58, 45, 92, 0.5);
   font-size: 0.8rem;
 }
 .info-row:last-child { border-bottom: none; }
@@ -588,7 +588,7 @@ body {
    Leaflet Overrides
    ========================================== */
 .leaflet-container {
-  background: #1a1f16 !important;
+  background: #0f0a1a !important;
 }
 
 .leaflet-popup-content-wrapper {
@@ -647,7 +647,7 @@ body {
    Video Viewport
    ========================================== */
 .video-viewport {
-  background: #0f120d;
+  background: #0a0612;
   border: 1px solid var(--border-default);
   border-radius: 0.75rem;
   overflow: hidden;
@@ -691,7 +691,7 @@ body {
 }
 
 .traffic-bar-fill.low { background: #7cb668; width: 20%; }
-.traffic-bar-fill.moderate { background: #d4a843; width: 50%; }
+.traffic-bar-fill.moderate { background: #e0b830; width: 50%; }
 .traffic-bar-fill.heavy { background: #c47a3c; width: 75%; }
 .traffic-bar-fill.congested { background: #c45c5c; width: 100%; }
 
@@ -834,8 +834,8 @@ body {
 }
 
 .result-card.caution {
-  background: rgba(212, 168, 67, 0.1);
-  border: 1px solid rgba(212, 168, 67, 0.25);
+  background: rgba(224, 184, 48, 0.1);
+  border: 1px solid rgba(224, 184, 48, 0.25);
 }
 
 .result-card.high-risk {

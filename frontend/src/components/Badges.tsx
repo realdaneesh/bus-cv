@@ -17,7 +17,7 @@ export const ProvenanceBadge: React.FC<ProvenanceBadgeProps> = ({ source, is_dem
     return <span className="badge badge-seed">Demo Data</span>;
   }
   if (source === 'MANUAL_TEST') {
-    return <span className="badge" style={{ background: 'rgba(212,168,67,0.15)', color: '#d4a843', borderColor: 'rgba(212,168,67,0.3)' }}>Manual Test</span>;
+    return <span className="badge" style={{ background: 'rgba(224,184,48,0.15)', color: '#e0b830', borderColor: 'rgba(224,184,48,0.3)' }}>Manual Test</span>;
   }
   return <span className="badge badge-seed">{source}</span>;
 };

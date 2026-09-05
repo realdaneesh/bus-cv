@@ -123,7 +123,7 @@ const CommandCenter: React.FC = () => {
                     alignItems: 'center',
                     justifyContent: 'space-between',
                     padding: '0.5rem 0',
-                    borderBottom: '1px solid rgba(61, 74, 50, 0.3)',
+                    borderBottom: '1px solid rgba(58, 45, 92, 0.3)',
                     fontSize: '0.75rem'
                   }}>
                     <span style={{ color: 'var(--text-primary)', fontWeight: 500 }}>
@@ -157,7 +157,7 @@ const CommandCenter: React.FC = () => {
                       alignItems: 'center',
                       gap: '0.75rem',
                       padding: '0.5rem 0',
-                      borderBottom: '1px solid rgba(61, 74, 50, 0.3)',
+                      borderBottom: '1px solid rgba(58, 45, 92, 0.3)',
                       fontSize: '0.75rem'
                     }}>
                       <PriorityBadge priority={priority} />
@@ -216,52 +216,52 @@ const CommandCenter: React.FC = () => {
               <div className="heatmap-grid">
                 {/* Hour labels */}
                 <div className="heatmap-label">6am</div>
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.2)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.15)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.1)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.05)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.2)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.15)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.1)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.2)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.15)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.1)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.05)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.2)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.15)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.1)' }} />
 
                 <div className="heatmap-label">12pm</div>
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.3)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.4)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.25)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.35)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.45)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.3)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.2)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.3)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.4)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.25)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.35)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.45)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.3)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.2)' }} />
 
                 <div className="heatmap-label">6pm</div>
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.5)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.6)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.4)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.55)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.7)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.5)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.35)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.5)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.6)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.4)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.55)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.7)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.5)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.35)' }} />
 
                 <div className="heatmap-label">9pm</div>
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.2)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.25)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.15)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.2)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.3)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.2)' }} />
-                <div className="heatmap-cell" style={{ background: 'rgba(107, 124, 82, 0.15)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.2)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.25)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.15)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.2)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.3)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.2)' }} />
+                <div className="heatmap-cell" style={{ background: 'rgba(201, 162, 39, 0.15)' }} />
               </div>
               <div className="heatmap-legend">
                 <div className="legend-item">
-                  <div className="legend-swatch" style={{ background: 'rgba(107, 124, 82, 0.15)' }} />
+                  <div className="legend-swatch" style={{ background: 'rgba(201, 162, 39, 0.15)' }} />
                   <span>Low</span>
                 </div>
                 <div className="legend-item">
-                  <div className="legend-swatch" style={{ background: 'rgba(107, 124, 82, 0.4)' }} />
+                  <div className="legend-swatch" style={{ background: 'rgba(201, 162, 39, 0.4)' }} />
                   <span>Medium</span>
                 </div>
                 <div className="legend-item">
-                  <div className="legend-swatch" style={{ background: 'rgba(107, 124, 82, 0.7)' }} />
+                  <div className="legend-swatch" style={{ background: 'rgba(201, 162, 39, 0.7)' }} />
                   <span>High</span>
                 </div>
               </div>

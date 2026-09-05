@@ -125,7 +125,7 @@ const LiveIntelligence: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="video-viewport" style={{ background: '#0f120d', position: 'relative', aspectRatio: '16/9', overflow: 'hidden', borderRadius: '0.5rem' }}>
+                  <div className="video-viewport" style={{ background: '#0a0612', position: 'relative', aspectRatio: '16/9', overflow: 'hidden', borderRadius: '0.5rem' }}>
                     {status.is_active && !streamError ? (
                       <>
                         <img
@@ -137,7 +137,7 @@ const LiveIntelligence: React.FC = () => {
                         <div style={{
                           position: 'absolute', top: '0.75rem', left: '0.75rem',
                           display: 'flex', alignItems: 'center', gap: '0.35rem',
-                          background: 'rgba(26, 31, 22, 0.85)', backdropFilter: 'blur(4px)',
+                          background: 'rgba(15, 10, 26, 0.85)', backdropFilter: 'blur(4px)',
                           border: '1px solid rgba(196, 92, 92, 0.5)',
                           padding: '0.25rem 0.6rem', borderRadius: '9999px',
                           fontSize: '0.6rem', fontWeight: 700, color: '#c45c5c', letterSpacing: '0.05em'
