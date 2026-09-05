@@ -1,0 +1,470 @@
+{
+  "timestamp": "2026-09-05 17:53:04",
+  "hardware": "CPU (Edge Compatible Benchmark)",
+  "num_test_images": 8,
+  "candidates": {
+    "peterhdd_yolov8s": {
+      "candidate_id": "peterhdd_yolov8s",
+      "name": "PeterHDD YOLOv8s (Pothole Detection)",
+      "type": "Single-Class Pothole Detector (YOLOv8s)",
+      "source": "https://huggingface.co/peterhdd/pothole-detection-yolov8",
+      "size_mb": 21.48,
+      "classes": {
+        "0": "0"
+      },
+      "num_classes": 1,
+      "avg_latency_ms": 189.47,
+      "avg_fps": 5.3,
+      "total_detections": 9,
+      "pothole_detections": 9,
+      "crack_detections": 0,
+      "false_positives_on_negative_controls": 0,
+      "image_results": [
+        {
+          "image_id": "asphalt_cracks",
+          "filename": "asphalt_cracks.jpg",
+          "category": "crack",
+          "detections_count": 0,
+          "detections": [],
+          "latency_ms": 175.72,
+          "fps": 5.7,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\peterhdd_yolov8s\\asphalt_cracks_annotated.jpg"
+        },
+        {
+          "image_id": "clean_road_marking",
+          "filename": "clean_road_marking.jpg",
+          "category": "negative_control",
+          "detections_count": 0,
+          "detections": [],
+          "latency_ms": 172.38,
+          "fps": 5.8,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\peterhdd_yolov8s\\clean_road_marking_annotated.jpg"
+        },
+        {
+          "image_id": "manhole_cover",
+          "filename": "manhole_cover.jpg",
+          "category": "negative_control",
+          "detections_count": 0,
+          "detections": [],
+          "latency_ms": 191.63,
+          "fps": 5.2,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\peterhdd_yolov8s\\manhole_cover_annotated.jpg"
+        },
+        {
+          "image_id": "pothole_big",
+          "filename": "pothole_big.jpg",
+          "category": "pothole",
+          "detections_count": 1,
+          "detections": [
+            {
+              "class_id": 0,
+              "class_name": "0",
+              "confidence": 0.733,
+              "box": [
+                117,
+                159,
+                352,
+                300
+              ]
+            }
+          ],
+          "latency_ms": 207.37,
+          "fps": 4.8,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\peterhdd_yolov8s\\pothole_big_annotated.jpg"
+        },
+        {
+          "image_id": "pothole_montreal",
+          "filename": "pothole_montreal.jpg",
+          "category": "pothole",
+          "detections_count": 0,
+          "detections": [],
+          "latency_ms": 181.48,
+          "fps": 5.5,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\peterhdd_yolov8s\\pothole_montreal_annotated.jpg"
+        },
+        {
+          "image_id": "pothole_repair",
+          "filename": "pothole_repair.jpg",
+          "category": "pothole",
+          "detections_count": 3,
+          "detections": [
+            {
+              "class_id": 0,
+              "class_name": "0",
+              "confidence": 0.73,
+              "box": [
+                670,
+                1217,
+                1500,
+                1499
+              ]
+            },
+            {
+              "class_id": 0,
+              "class_name": "0",
+              "confidence": 0.511,
+              "box": [
+                14,
+                1569,
+                1633,
+                1955
+              ]
+            },
+            {
+              "class_id": 0,
+              "class_name": "0",
+              "confidence": 0.286,
+              "box": [
+                31,
+                1675,
+                1175,
+                1953
+              ]
+            }
+          ],
+          "latency_ms": 195.07,
+          "fps": 5.1,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\peterhdd_yolov8s\\pothole_repair_annotated.jpg"
+        },
+        {
+          "image_id": "pothole_small",
+          "filename": "pothole_small.jpg",
+          "category": "pothole",
+          "detections_count": 2,
+          "detections": [
+            {
+              "class_id": 0,
+              "class_name": "0",
+              "confidence": 0.862,
+              "box": [
+                75,
+                119,
+                259,
+                218
+              ]
+            },
+            {
+              "class_id": 0,
+              "class_name": "0",
+              "confidence": 0.612,
+              "box": [
+                73,
+                84,
+                282,
+                219
+              ]
+            }
+          ],
+          "latency_ms": 178.58,
+          "fps": 5.6,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\peterhdd_yolov8s\\pothole_small_annotated.jpg"
+        },
+        {
+          "image_id": "pothole_villeray",
+          "filename": "pothole_villeray.jpg",
+          "category": "pothole",
+          "detections_count": 3,
+          "detections": [
+            {
+              "class_id": 0,
+              "class_name": "0",
+              "confidence": 0.851,
+              "box": [
+                618,
+                824,
+                1270,
+                1374
+              ]
+            },
+            {
+              "class_id": 0,
+              "class_name": "0",
+              "confidence": 0.431,
+              "box": [
+                583,
+                822,
+                1527,
+                1360
+              ]
+            },
+            {
+              "class_id": 0,
+              "class_name": "0",
+              "confidence": 0.254,
+              "box": [
+                1922,
+                1348,
+                2048,
+                1536
+              ]
+            }
+          ],
+          "latency_ms": 213.53,
+          "fps": 4.7,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\peterhdd_yolov8s\\pothole_villeray_annotated.jpg"
+        }
+      ]
+    },
+    "samdutse_yolov8s": {
+      "candidate_id": "samdutse_yolov8s",
+      "name": "Samdutse YOLOv8s (Pothole Detection)",
+      "type": "Single-Class Pothole Detector (YOLOv8s)",
+      "source": "https://huggingface.co/samdutse/pothole-yolov8",
+      "size_mb": 21.48,
+      "classes": {
+        "0": "Pothole"
+      },
+      "num_classes": 1,
+      "avg_latency_ms": 203.8,
+      "avg_fps": 4.9,
+      "total_detections": 3,
+      "pothole_detections": 3,
+      "crack_detections": 0,
+      "false_positives_on_negative_controls": 0,
+      "image_results": [
+        {
+          "image_id": "asphalt_cracks",
+          "filename": "asphalt_cracks.jpg",
+          "category": "crack",
+          "detections_count": 0,
+          "detections": [],
+          "latency_ms": 183.09,
+          "fps": 5.5,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\samdutse_yolov8s\\asphalt_cracks_annotated.jpg"
+        },
+        {
+          "image_id": "clean_road_marking",
+          "filename": "clean_road_marking.jpg",
+          "category": "negative_control",
+          "detections_count": 0,
+          "detections": [],
+          "latency_ms": 176.31,
+          "fps": 5.7,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\samdutse_yolov8s\\clean_road_marking_annotated.jpg"
+        },
+        {
+          "image_id": "manhole_cover",
+          "filename": "manhole_cover.jpg",
+          "category": "negative_control",
+          "detections_count": 0,
+          "detections": [],
+          "latency_ms": 171.41,
+          "fps": 5.8,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\samdutse_yolov8s\\manhole_cover_annotated.jpg"
+        },
+        {
+          "image_id": "pothole_big",
+          "filename": "pothole_big.jpg",
+          "category": "pothole",
+          "detections_count": 1,
+          "detections": [
+            {
+              "class_id": 0,
+              "class_name": "POTHOLE",
+              "confidence": 0.821,
+              "box": [
+                125,
+                172,
+                343,
+                269
+              ]
+            }
+          ],
+          "latency_ms": 271.95,
+          "fps": 3.7,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\samdutse_yolov8s\\pothole_big_annotated.jpg"
+        },
+        {
+          "image_id": "pothole_montreal",
+          "filename": "pothole_montreal.jpg",
+          "category": "pothole",
+          "detections_count": 0,
+          "detections": [],
+          "latency_ms": 186.84,
+          "fps": 5.4,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\samdutse_yolov8s\\pothole_montreal_annotated.jpg"
+        },
+        {
+          "image_id": "pothole_repair",
+          "filename": "pothole_repair.jpg",
+          "category": "pothole",
+          "detections_count": 0,
+          "detections": [],
+          "latency_ms": 223.99,
+          "fps": 4.5,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\samdutse_yolov8s\\pothole_repair_annotated.jpg"
+        },
+        {
+          "image_id": "pothole_small",
+          "filename": "pothole_small.jpg",
+          "category": "pothole",
+          "detections_count": 1,
+          "detections": [
+            {
+              "class_id": 0,
+              "class_name": "POTHOLE",
+              "confidence": 0.872,
+              "box": [
+                78,
+                127,
+                262,
+                216
+              ]
+            }
+          ],
+          "latency_ms": 207.23,
+          "fps": 4.8,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\samdutse_yolov8s\\pothole_small_annotated.jpg"
+        },
+        {
+          "image_id": "pothole_villeray",
+          "filename": "pothole_villeray.jpg",
+          "category": "pothole",
+          "detections_count": 1,
+          "detections": [
+            {
+              "class_id": 0,
+              "class_name": "POTHOLE",
+              "confidence": 0.787,
+              "box": [
+                611,
+                663,
+                1386,
+                1323
+              ]
+            }
+          ],
+          "latency_ms": 209.54,
+          "fps": 4.8,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\samdutse_yolov8s\\pothole_villeray_annotated.jpg"
+        }
+      ]
+    },
+    "ianmutai_iris_yolov8n": {
+      "candidate_id": "ianmutai_iris_yolov8n",
+      "name": "IanMutai IRIS Road Detection v2 (YOLOv8n)",
+      "type": "Multi-Class Urban Road Distress & Infrastructure (YOLOv8n)",
+      "source": "https://huggingface.co/ianmutai/iris-road-detection-v2",
+      "size_mb": 5.93,
+      "classes": {
+        "0": "POTHOLE",
+        "1": "CRACK",
+        "2": "PATCH",
+        "3": "UNPAVED_ROAD",
+        "4": "SPEED_BUMP",
+        "5": "ROAD_SIGN",
+        "6": "TRAFFIC_LIGHT",
+        "7": "GUARDRAIL",
+        "8": "PEDESTRIAN_CROSSING",
+        "9": "ROAD_MARKING",
+        "10": "MANHOLE",
+        "11": "DRAINAGE",
+        "12": "VEHICLE",
+        "13": "MOTORCYCLE",
+        "14": "CONSTRUCTION",
+        "15": "NUMBER_PLATE"
+      },
+      "num_classes": 16,
+      "avg_latency_ms": 38.61,
+      "avg_fps": 25.9,
+      "total_detections": 1,
+      "pothole_detections": 0,
+      "crack_detections": 0,
+      "false_positives_on_negative_controls": 0,
+      "image_results": [
+        {
+          "image_id": "asphalt_cracks",
+          "filename": "asphalt_cracks.jpg",
+          "category": "crack",
+          "detections_count": 1,
+          "detections": [
+            {
+              "class_id": 12,
+              "class_name": "VEHICLE",
+              "confidence": 0.582,
+              "box": [
+                290,
+                341,
+                810,
+                625
+              ]
+            }
+          ],
+          "latency_ms": 46.27,
+          "fps": 21.6,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\ianmutai_iris_yolov8n\\asphalt_cracks_annotated.jpg"
+        },
+        {
+          "image_id": "clean_road_marking",
+          "filename": "clean_road_marking.jpg",
+          "category": "negative_control",
+          "detections_count": 0,
+          "detections": [],
+          "latency_ms": 33.32,
+          "fps": 30.0,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\ianmutai_iris_yolov8n\\clean_road_marking_annotated.jpg"
+        },
+        {
+          "image_id": "manhole_cover",
+          "filename": "manhole_cover.jpg",
+          "category": "negative_control",
+          "detections_count": 0,
+          "detections": [],
+          "latency_ms": 30.56,
+          "fps": 32.7,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\ianmutai_iris_yolov8n\\manhole_cover_annotated.jpg"
+        },
+        {
+          "image_id": "pothole_big",
+          "filename": "pothole_big.jpg",
+          "category": "pothole",
+          "detections_count": 0,
+          "detections": [],
+          "latency_ms": 35.95,
+          "fps": 27.8,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\ianmutai_iris_yolov8n\\pothole_big_annotated.jpg"
+        },
+        {
+          "image_id": "pothole_montreal",
+          "filename": "pothole_montreal.jpg",
+          "category": "pothole",
+          "detections_count": 0,
+          "detections": [],
+          "latency_ms": 28.34,
+          "fps": 35.3,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\ianmutai_iris_yolov8n\\pothole_montreal_annotated.jpg"
+        },
+        {
+          "image_id": "pothole_repair",
+          "filename": "pothole_repair.jpg",
+          "category": "pothole",
+          "detections_count": 0,
+          "detections": [],
+          "latency_ms": 49.95,
+          "fps": 20.0,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\ianmutai_iris_yolov8n\\pothole_repair_annotated.jpg"
+        },
+        {
+          "image_id": "pothole_small",
+          "filename": "pothole_small.jpg",
+          "category": "pothole",
+          "detections_count": 0,
+          "detections": [],
+          "latency_ms": 42.61,
+          "fps": 23.5,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\ianmutai_iris_yolov8n\\pothole_small_annotated.jpg"
+        },
+        {
+          "image_id": "pothole_villeray",
+          "filename": "pothole_villeray.jpg",
+          "category": "pothole",
+          "detections_count": 0,
+          "detections": [],
+          "latency_ms": 41.89,
+          "fps": 23.9,
+          "annotated_artifact": "C:\\Users\\danee\\OneDrive\\Desktop\\bus-cv\\edge-ai\\road_damage_eval\\results\\ianmutai_iris_yolov8n\\pothole_villeray_annotated.jpg"
+        }
+      ]
+    }
+  }
+}

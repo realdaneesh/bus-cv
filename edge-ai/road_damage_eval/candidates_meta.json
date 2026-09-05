@@ -1,0 +1,48 @@
+{
+  "peterhdd_pothole_yolov8n": {
+    "id": "peterhdd_pothole_yolov8n",
+    "name": "PeterHDD YOLOv8n Pothole",
+    "author": "peterhdd",
+    "description": "YOLOv8 nano fine-tuned for road potholes",
+    "url": "https://huggingface.co/peterhdd/pothole-detection-yolov8/resolve/main/best.pt",
+    "target_filename": "peterhdd_pothole_yolov8n.pt",
+    "expected_classes": [
+      "pothole"
+    ],
+    "loaded": true,
+    "classes": {
+      "0": "0"
+    },
+    "num_classes": 1,
+    "size_mb": 21.48
+  },
+  "arnabdhar_rdd_yolov8m": {
+    "id": "arnabdhar_rdd_yolov8m",
+    "name": "ArnabDhar YOLOv8 RDD2022 Multi-Class",
+    "author": "arnabdhar",
+    "description": "YOLOv8 model trained on RDD2022 dataset for multi-class road damage (D00, D10, D20, D40)",
+    "url": "https://huggingface.co/arnabdhar/YOLOv8-RDD-Road-Damage-Detection/resolve/main/best.pt",
+    "target_filename": "arnabdhar_rdd_yolov8m.pt",
+    "expected_classes": [
+      "D00",
+      "D10",
+      "D20",
+      "D40"
+    ],
+    "loaded": false,
+    "error": "Download failed"
+  },
+  "keremberke_pothole_yolov8n": {
+    "id": "keremberke_pothole_yolov8n",
+    "name": "Keremberke YOLOv8n Pothole",
+    "author": "keremberke",
+    "description": "YOLOv8 nano pothole detection model",
+    "url": "https://huggingface.co/keremberke/yolov8n-pothole/resolve/main/best.pt",
+    "target_filename": "keremberke_pothole_yolov8n.pt",
+    "expected_classes": [
+      "pothole"
+    ],
+    "loaded": false,
+    "error": "Download failed"
+  }
+}

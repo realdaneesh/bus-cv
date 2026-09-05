@@ -1,0 +1,47 @@
+{
+  "peterhdd_pothole_yolov8s": {
+    "name": "PeterHDD YOLOv8s Pothole",
+    "status": "loaded",
+    "file": "peterhdd_pothole_yolov8s.pt",
+    "size_mb": 21.48,
+    "classes": {
+      "0": "0"
+    },
+    "task": "detect"
+  },
+  "samdutse_pothole_yolov8": {
+    "name": "Samdutse YOLOv8 Pothole",
+    "status": "loaded",
+    "file": "samdutse_pothole_yolov8.pt",
+    "size_mb": 21.48,
+    "classes": {
+      "0": "Pothole"
+    },
+    "task": "detect"
+  },
+  "ianmutai_iris_rdd_yolov8": {
+    "name": "IanMutai IRIS Road Damage YOLOv8",
+    "status": "loaded",
+    "file": "ianmutai_iris_rdd_yolov8.pt",
+    "size_mb": 5.93,
+    "classes": {
+      "0": "POTHOLE",
+      "1": "CRACK",
+      "2": "PATCH",
+      "3": "UNPAVED_ROAD",
+      "4": "SPEED_BUMP",
+      "5": "ROAD_SIGN",
+      "6": "TRAFFIC_LIGHT",
+      "7": "GUARDRAIL",
+      "8": "PEDESTRIAN_CROSSING",
+      "9": "ROAD_MARKING",
+      "10": "MANHOLE",
+      "11": "DRAINAGE",
+      "12": "VEHICLE",
+      "13": "MOTORCYCLE",
+      "14": "CONSTRUCTION",
+      "15": "NUMBER_PLATE"
+    },
+    "task": "detect"
+  }
+}
