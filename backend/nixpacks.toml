@@ -1,0 +1,28 @@
+# Nixpacks build configuration for the BUS-CV backend.
+# Railway Root Directory = backend, so this file lives at backend/nixpacks.toml.
+#
+# WHY THIS IS NEEDED
+# ------------------
+# Ultralytics declares `opencv-python>=4.7.0` (the GUI-enabled OpenCV build) as a
+# required dependency. A plain `pip install -r requirements.txt` therefore installs
+# BOTH `opencv-python` (GUI) and `opencv-python-headless`. They are separate
+# distributions that both ship the `cv2` package, so whichever installs last wins the
+# on-disk files. If the GUI build's cv2 wins, `import cv2` links against
+# `libxcb.so.1` (X11), which does not exist on Railway's headless servers -> the
+# FastAPI startup crash (`ImportError: libxcb.so.1`).
+#
+# This install-phase command list runs in place of Nixpacks' default pip install and
+# guarantees that ONLY opencv-python-headless provides cv2 at runtime:
+#   pip install -r requirements.txt                       # install app + ultralytics
+#   pip uninstall -y opencv-python || true                # remove the GUI build
+#   pip install --no-deps --force-reinstall opencv-python-headless
+#                                                         # re-establish headless cv2
+#
+# No X11/libxcb system packages are added. The start command is intentionally left
+# to Nixpacks / the Railway service settings.
+[phases.install]
+cmds = [
+  "pip install -r requirements.txt",
+  "pip uninstall -y opencv-python || true",
+  "pip install --no-deps --force-reinstall --no-cache-dir opencv-python-headless",
+]

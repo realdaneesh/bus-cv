@@ -5,6 +5,10 @@ pydantic>=2.6.4
 pydantic-settings>=2.2.1
 python-multipart>=0.0.9
 requests>=2.31.0
+# Headless OpenCV ONLY — Railway is a headless Linux server (no X11/libxcb).
+# Do NOT add opencv-python (the GUI build): ultralytics pulls it in transitively,
+# and a GUI cv2 build crashes `import cv2` with `libxcb.so.1: missing`. The
+# backend/nixpacks.toml install hook removes any GUI opencv-python after install.
 opencv-python-headless>=4.8.0
 numpy>=1.23.0
 ultralytics>=8.0.0
