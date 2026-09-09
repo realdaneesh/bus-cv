@@ -1,6 +1,4 @@
 import datetime
-import os
-import sys
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
@@ -8,11 +6,6 @@ from app.database import get_db
 from app.models import Bus
 from app.schemas import BusResponse, BusLocationUpdate, BusLocationResponse
 from app.config import settings
-
-# Make edge-ai importable so the planned Mumbai route can be shared with the map.
-_edge_ai = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "edge-ai"))
-if _edge_ai not in sys.path:
-    sys.path.insert(0, _edge_ai)
 
 router = APIRouter(prefix="/api/bus", tags=["Bus"])
 
@@ -73,7 +66,7 @@ def get_bus_route():
     labelled as such for transparency.
     """
     try:
-        from gps_simulator import GPSSimulator
+        from app.edge_ai.gps_simulator import GPSSimulator
     except Exception as exc:  # pragma: no cover
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,

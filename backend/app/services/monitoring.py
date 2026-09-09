@@ -1,5 +1,4 @@
 import os
-import sys
 import datetime
 import threading
 import logging
@@ -10,11 +9,6 @@ from app.config import settings
 from app.services.runtime_state import runtime_state
 
 logger = logging.getLogger(__name__)
-
-# Ensure edge-ai is on sys.path for importing VideoProcessor
-_edge_ai_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "edge-ai"))
-if _edge_ai_path not in sys.path:
-    sys.path.insert(0, _edge_ai_path)
 
 
 class MonitoringService:
@@ -115,7 +109,7 @@ class MonitoringService:
             if video_source:
                 source = video_source
             else:
-                from processor import get_default_video_source
+                from app.edge_ai.processor import get_default_video_source
                 source = get_default_video_source()
 
             self._latest_error = None
@@ -125,7 +119,7 @@ class MonitoringService:
 
             # Task 4: Validate the selected video BEFORE starting the pipeline.
             # If it cannot be opened, fail clearly instead of silently using a bad source.
-            from processor import inspect_video
+            from app.edge_ai.processor import inspect_video
             vinfo = inspect_video(source)
             self._video_validation = vinfo
             if not vinfo["valid"]:
@@ -142,7 +136,7 @@ class MonitoringService:
             # Create stop event and processor instance
             self._stop_event = threading.Event()
             try:
-                from processor import VideoProcessor
+                from app.edge_ai.processor import VideoProcessor
                 self._processor_instance = VideoProcessor(
                     video_source=source,
                     stop_event=self._stop_event
